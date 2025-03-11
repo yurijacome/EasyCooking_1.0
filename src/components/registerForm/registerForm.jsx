@@ -23,12 +23,17 @@ const RegisterForm = () => {
             {() => (
                 <StyledForm>
                     <h1>Register Form</h1>
-                    <Field name="username" placeholder="Username" />
+                    <Field className="Field" name="email" placeholder="email" />
                     <ErrorMessage name="username" component="div" />
-                    <Field name="password" type="password" placeholder="Password" />
+
+                    <Field className="Field" name="name" placeholder="name" />
+
+                    <Field className="Field" name="password" type="password" placeholder="Password" />
                     <ErrorMessage name="password" component="div" />
-                    <Field name="confirmPassword" type="password" placeholder="Confirm Password" />
+
+                    <Field className="Field" name="confirmPassword" type="password" placeholder="Confirm Password" />
                     <ErrorMessage name="confirmPassword" component="div" />
+
                     <button type="submit">Register</button>
                 </StyledForm>
             )}

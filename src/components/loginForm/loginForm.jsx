@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import RegisterForm from '../registerForm/registerForm';
+
 import { Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { StyledForm } from './loginFormStyle';
@@ -12,6 +15,8 @@ const validationSchema = Yup.object().shape({
 
 
 const LoginForm = () => {
+    const [showRegisterForm, setShowRegisterForm] = useState(false);
+
     return (
         <Formik
             initialValues={{ username: '', password: '' }}
@@ -28,6 +33,11 @@ const LoginForm = () => {
                     <Field className="Field" name="password" type="password" placeholder="Password" />
                     <ErrorMessage name="password" component="span" />
                     <button type="submit">Login</button>
+                    <span>Don't have an account? <a onClick={() => setShowRegisterForm(true)}>Register</a></span>
+                    {showRegisterForm && <RegisterForm />}
+
+
+
                 </StyledForm>
             )}
         </Formik>
