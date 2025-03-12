@@ -21,7 +21,7 @@ const Login = () => {
         <div className="login-container">
           <img className="Logo" src={LogoBlack} alt="Logo" />
           <LoginForm />
-          <span className="LoginSpan">Não tem uma conta? <a href="/register">Cadastre-se</a> ou <a href="/">Entre como convidado</a></span>
+          <span className="LoginSpan">Não tem uma conta? <a href="/register">Cadastre-se</a> ou <a href="/"> entre como convidado</a></span>
         </div>
 
         <img className="CookingImg" src={CookingPhoto} alt="CookingPhoto" />

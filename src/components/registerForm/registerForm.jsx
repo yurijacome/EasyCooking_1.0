@@ -37,20 +37,26 @@ const RegisterForm = () => {
         >
             {() => (
                 <StyledForm>
-                    <h1>Register Form</h1>
-                    <Field className="Field" name="email" placeholder="email" />
+                    <h1>Registrar</h1>
+
+                    <label>Email </label>
+                    <Field className="Field" name="email" placeholder="Email" />
                     <ErrorMessage name="email" component="span" />
 
-                    <Field className="Field" name="username" placeholder="name" />
+                    <label>Nome </label>
+                    <Field className="Field" name="username" placeholder="Nome" />
                     <ErrorMessage name="username" component="span" />
 
-                    <Field className="Field" name="password" type="password" placeholder="password" />
+                    <label>Senha </label>
+                    <Field className="Field" name="password" type="password" placeholder="Senha" />
                     <ErrorMessage name="password" component="span" />
 
+                    <label>Confirmar senha </label>
                     <Field className="Field" name="confirmPassword" type="password" placeholder="Confirm Password" />
                     <ErrorMessage name="confirmPassword" component="span" />
 
-                    <button type="submit">Register</button>
+                    <button type="submit">Registrar</button>
+                    <span className='registerSpan'>Ja tem uma conta? Faça seu <a href="/login">login</a></span>
                 </StyledForm>
             )}
         </Formik>

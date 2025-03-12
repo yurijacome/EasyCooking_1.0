@@ -1,61 +1,107 @@
 import styled from "styled-components";
 
 export const StyledForm = styled.form`
-    box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    width: 35vw;
-    min-height: 80vh;
-    margin: 20px 20px 20px 0px;
+    width: 100vh;
+    height: 100vh;
 
-    border: 1px solid #000;
-    background-color: rgb(214, 181, 210);
+    background-color:rgb(255, 255, 255);
+    border: none;
 
-    h1 {
-        margin: 30px 0; 
-        align-self: center;
+
+    h1{
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
     }
 
-    span {
-        color: red;
-        align-self: center;
-        margin-top: 10px;
+
+    span{
+    font-size: 0.9rem;
+    color: rgb(253, 0, 0);
+    align-self: center;
+    margin-top: 10px;
     }
 
-    button { 
-        align-self: center;
-        width: 70%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        height: 35px;
-        border-radius: 5px;
-        border: 1px solid #000;
-        background-color: #000;
+    .registerSpan{
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    align-self: center;
+    margin-top: 10px;
+    }
+
+    a{
+    font-size: 0.9rem;
+    color: rgb(255, 0, 0);
+    }
+
+    button{ 
+        width: 40%;
+        margin-top: 50px;
+        height: 45px;
+        border-radius: 50px;
+        border: none;
+        background-color: rgb(255, 0, 0);
         color: white;
         font-size: 15px;
         font-weight: bold;
     }
 
-    .Field {
+    .Field{
         align-self: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        border-radius: 50px;
+        border: none;
+        background-color: #f0f0f0;
+
+        width: 50%;
         height: 35px;
-        width: 70%;
-        margin-top: 10px;
-        border-radius: 5px;
-        border: 1px solid #000;
+
+        padding: 6px;
+        font-size: 15px;
+    }
+
+        label{
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 30px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        width: 50%;
     }
 
 
-    @media(max-width: 567px) {
+
+
+
+
+
+
+
+
+
+    @media(max-width: 567px){
         width: 90vw;
 
-        div {
+        div{
             gap: 2px;
         }
 
-        input {
+        input{
             height: 45px;
         }
+
+
     }
+
+
 `;

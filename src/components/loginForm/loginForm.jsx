@@ -26,8 +26,12 @@ const LoginForm = () => {
             {() => (
                 <StyledForm>
                     <h1>Faça seu login </h1>
+
+                    <label>Email </label>
                     <Field className="Field" name="email" placeholder="Email" />
                     <ErrorMessage name="email" component="span" />
+                    
+                    <label>Senha </label>
                     <Field className="Field" name="password" type="password" placeholder="Password" />
                     <ErrorMessage name="password" component="span" />
                     <button type="submit">Login</button>

@@ -5,7 +5,7 @@ export const Container  = styled.div`
     flex-direction: row;    
     align-items: center;
     width: 100vw;
-    background-color: #f0f0f0;
+    background-color:rgb(255, 255, 255);
 
 
     .login-page{
@@ -22,20 +22,30 @@ export const Container  = styled.div`
         justify-content: center;
         width: 55vw;
         height: 100vh;
-        background-color:rgb(160, 29, 29);
+        background-color:rgb(255, 255, 255);
     }
 
+    .Logo{
+        width: 100vw;
+        height: 200px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+        
     .CookingImg{
         width: 40vw;
-        height: 85vh;
-        margin-left: 50px;
+        height: 90vh;
     }
 
     .LoginSpan{
-        color: white;
-        font-size: 20px;
+        color:rgb(0, 0, 0);
+        font-size: 0.9rem;
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+    
+    a{
+        color: rgb(255, 0, 0);   
     }
     
 `;

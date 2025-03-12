@@ -6,36 +6,40 @@ export const StyledForm = styled.form`
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-
-    width: 35vw;
-    min-height: 30vh;
-    margin: 20px 20px 20px 0px;
+    width: 25vw;
+    min-height: 40vh;
 
     
-    border: 1px solid #000;
-    background-color:rgb(226, 223, 12);
+    border: none;
 
 
     h1{
-    margin: 30px 0; 
     align-self: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    }
+
+        input{
+ 
     }
 
     span{
-    color: red;
+    font-size: 0.9rem;
+    color: rgb(253, 0, 0);
     align-self: center;
     margin-top: 10px;
     }
 
     button{ 
-        width: 70%;
+        width: 40%;
         margin-top: 50px;
-        margin-left: 80px;
-        height: 35px;
-        border-radius: 5px;
-        border: 1px solid #000;
-        background-color: #000;
+        height: 45px;
+        border-radius: 50px;
+        border: none;
+        background-color: rgb(255, 0, 0);
         color: white;
         font-size: 15px;
         font-weight: bold;
@@ -43,11 +47,29 @@ export const StyledForm = styled.form`
 
     .Field{
         align-self: center;
-        height: 35px;
-        width: 70%;
-        margin-top: 35px;
-        border-radius: 5px;
-        border: 1px solid #000;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        border-radius: 50px;
+        border: none;
+        background-color: #f0f0f0;
+
+        width: 100%;
+        height: 45px;
+
+        padding: 6px;
+        font-size: 15px;
+    }
+
+        label{
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 30px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
     }
 
 
