@@ -1,1 +1,2 @@
-# Projeto Easy Cooking
+# Projeto Easy Cooking.  
+==========================
