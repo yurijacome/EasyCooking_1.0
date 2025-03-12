@@ -7,7 +7,8 @@ export const HeaderContainer = styled.header`
     gap: 78vw;
     width: 100vw;
     height: 100px;
-    background-color:rgb(79, 102, 148);
+    background-color:${props => props.theme.colorHeader};
+    color:${props => props.theme.colorOne};
 
     .imgLogo {
         width: 180px;
@@ -18,11 +19,12 @@ export const HeaderContainer = styled.header`
 
         button {
             border: none;
-            background-color: rgb(216, 29, 69);
+            background-color: ${props => props.theme.button.backgroundColor};
             color: white;
             height: 35px;
             width: 100px;
             border-radius: 35px;
+            margin-left: -15vh;
             cursor: pointer;
 
             :hover {

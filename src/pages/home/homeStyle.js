@@ -6,7 +6,8 @@ export const Container  = styled.div`
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: ${props => props.theme.backgroundColorOne};
+    color: ${props => props.theme.colorOne};
 
 
 

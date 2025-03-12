@@ -4,7 +4,7 @@ const lightTheme = {
   colorHeader: "#ECECEC",
   backgroundColorOne: "#ffffff",
   backgroundColorTwo: "#EA1D2C",
-  colorOne: "#rgb(0, 0, 0)",
+  colorOne: "rgb(0, 0, 0)",
   colorTwo: "rgb(255, 255, 255)",
   catOne: "#FFEB0A",
   catTwo: "#ffc60a",
@@ -18,7 +18,7 @@ const lightTheme = {
 
   button: {
       textColor: "#ffffff",
-      backgroundColor: "#ea1d2cff",
+      backgroundColor: "rgb(255, 0, 0)",
   },
 };
 
@@ -39,8 +39,8 @@ const darkTheme = {
 
   
   button: {
-    textColor: "#ffffff",
-    backgroundColor: "#800000",
+    textColor: "rgb(255, 255, 255)",
+    backgroundColor: "rgb(255, 0, 0)",
   },
 };
 
@@ -60,7 +60,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(30, 201, 67);
   }
 
 
@@ -78,7 +77,6 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: #015ea0;
   }
 
 `;

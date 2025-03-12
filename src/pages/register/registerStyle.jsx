@@ -8,7 +8,7 @@ export const Container = styled.div`
     width: 100vw;
     height: 100vh;
 
-    background-color: rgb(255, 255, 255);
+    background-color:${props => props.theme.backgroundColorOne};
 
     .register-container {
         display: flex;
@@ -18,7 +18,6 @@ export const Container = styled.div`
 
         width: 55vw;
         height: 100vh;
-        background-color: rgb(255, 255, 255);
     }
 
     .Logo {
@@ -30,7 +29,7 @@ export const Container = styled.div`
     h1 {
     font-size: 40px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: ${props => props.theme.colorOne};
     text-align: center;
     width: 80%;
     align-self: center;

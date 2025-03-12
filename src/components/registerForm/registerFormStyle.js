@@ -10,7 +10,7 @@ export const StyledForm = styled.form`
     width: 100vh;
     height: 100vh;
 
-    background-color:rgb(255, 255, 255);
+    background-color: ${props => props.theme.backgroundColorOne};
     border: none;
 
 
@@ -18,6 +18,7 @@ export const StyledForm = styled.form`
     align-self: center;
     margin-top: 10px;
     margin-bottom: 20px;
+    color: ${props => props.theme.colorOne};
     }
 
 
@@ -30,7 +31,7 @@ export const StyledForm = styled.form`
 
     .registerSpan{
     font-size: 0.9rem;
-    color: rgb(0, 0, 0);
+    color: ${props => props.theme.colorOne};
     align-self: center;
     margin-top: 10px;
     }
@@ -59,7 +60,8 @@ export const StyledForm = styled.form`
 
         border-radius: 50px;
         border: none;
-        background-color: #f0f0f0;
+        background-color: ${props => props.theme.inputColor};
+        color: ${props => props.theme.colorOne};
 
         width: 50%;
         height: 35px;
@@ -77,6 +79,7 @@ export const StyledForm = styled.form`
         align-items: center;
         gap: 0.5rem;
         width: 50%;
+        color: ${props => props.theme.colorOne};
     }
 
 
