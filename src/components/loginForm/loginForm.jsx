@@ -7,7 +7,7 @@ import * as Yup from 'yup';
 import { StyledForm } from './loginFormStyle';
 
 const validationSchema = Yup.object().shape({
-    username: Yup.string().required('Username is required'),
+    email: Yup.string().required('Email is required'),
     password: Yup.string().required('Password is required'),
 });
 
@@ -25,9 +25,9 @@ const LoginForm = () => {
         >
             {() => (
                 <StyledForm>
-                    <h1>Login Form</h1>
-                    <Field className="Field" name="username" placeholder="Username" />
-                    <ErrorMessage name="username" component="span" />
+                    <h1>Faça seu login </h1>
+                    <Field className="Field" name="email" placeholder="Email" />
+                    <ErrorMessage name="email" component="span" />
                     <Field className="Field" name="password" type="password" placeholder="Password" />
                     <ErrorMessage name="password" component="span" />
                     <button type="submit">Login</button>

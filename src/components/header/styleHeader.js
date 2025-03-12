@@ -4,15 +4,16 @@ export const HeaderContainer = styled.header`
 
     display: flex;
     align-items: center;
+    gap: 78vw;
     width: 100vw;
-    height: 70px;
+    height: 100px;
     background-color:rgb(79, 102, 148);
 
     .imgLogo {
-        width: 150px;
+        width: 180px;
         height: 100%;
+        margin-left: 20px;
         cursor: pointer;
-        background-color: rgb(15, 190, 221);
     }
 
         button {
@@ -28,5 +29,10 @@ export const HeaderContainer = styled.header`
                 filter: brightness(1.4)
             }
         }
+
+
+
+
+
 
 `

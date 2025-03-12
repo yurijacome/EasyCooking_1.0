@@ -4,14 +4,15 @@ export const Container  = styled.div`
     display: flex;
     flex-direction: row;    
     align-items: center;
-    width: 100%;
+    width: 100vw;
     background-color: #f0f0f0;
 
 
-    .CookingImg{
-        width: 40vw;
-        height: 85vh;
-        margin-left: 50px;
+    .login-page{
+        width: 100vw;
+        height: 100vw;
+        display: flex;  
+        flex-direction: column;
     }
 
     .login-container{
@@ -19,9 +20,15 @@ export const Container  = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 45vw;
+        width: 55vw;
         height: 100vh;
         background-color:rgb(160, 29, 29);
+    }
+
+    .CookingImg{
+        width: 40vw;
+        height: 85vh;
+        margin-left: 50px;
     }
 
     .LoginSpan{

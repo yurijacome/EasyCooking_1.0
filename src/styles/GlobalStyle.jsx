@@ -1,12 +1,58 @@
 import { createGlobalStyle } from "styled-components";
 
+const lightTheme = {
+  colorOne: "#000000",
+  colorTwo: "#ffffff",
+  colorHeader: "#ECECEC",
+  backgroundColorOne: "#ffffff",
+  backgroundColorTwo: "#EA1D2C",
+  catOne: "#FFEB0A",
+  catTwo: "#ffc60a",
+  catTree: "#f68f11",
+  catFour: "#F64F11",
+  inputColor: "#E2E2E2", 
+  colorIcon: "#252525",
+  rating: "#f68f11",
+  title: "#ea1d2cff",
 
+
+  button: {
+      textColor: "#ffffff",
+      backgroundColor: "#ea1d2cff",
+  },
+};
+
+const darkTheme = {
+  colorOne: "#ffffff",
+  colorTwo: "#000000",
+  colorHeader: "#121212",
+  backgroundColorOne: "#252525",
+  backgroundColorTwo: "#5D090E",
+  catOne: "#FFEB0A",
+  catTwo: "#ffc60a",
+  catTree: "#f68f11",
+  catFour: "#F64F11",
+  inputColor:"#333333",
+  colorIcon: "#E2E2E2",
+  rating: "#ffc60a",
+  title: "#cd131fff",
+
+  
+  button: {
+    textColor: "#ffffff",
+    backgroundColor: "#800000",
+  },
+};
+
+export const themes = {
+light: lightTheme,
+dark: darkTheme,
+};
 
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
     outline: 0;
   }
 

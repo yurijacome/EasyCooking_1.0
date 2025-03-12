@@ -9,7 +9,7 @@ export const StyledForm = styled.form`
 
 
     width: 35vw;
-    min-height: 80vh;
+    min-height: 30vh;
     margin: 20px 20px 20px 0px;
 
     
