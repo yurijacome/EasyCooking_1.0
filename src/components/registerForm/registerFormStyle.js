@@ -1,36 +1,33 @@
 import styled from "styled-components";
 
 export const StyledForm = styled.form`
-
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
-    margin: 40px 20px 20px 60px;
-
 
     width: 35vw;
-    min-height: 60vh;
-    
+    min-height: 80vh;
+    margin: 20px 20px 20px 0px;
+
     border: 1px solid #000;
-    background-color:rgb(226, 223, 12);
+    background-color: rgb(214, 181, 210);
 
-
-    h1{
-    margin: 30px 0; 
-    align-self: center;
+    h1 {
+        margin: 30px 0; 
+        align-self: center;
     }
 
-    span{
-    color: red;
-    align-self: center;
-    margin-top: 10px;
+    span {
+        color: red;
+        align-self: center;
+        margin-top: 10px;
     }
 
-    button{ 
+    button { 
+        align-self: center;
         width: 70%;
-        margin-top: 50px;
-        margin-left: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         height: 35px;
         border-radius: 5px;
         border: 1px solid #000;
@@ -40,37 +37,25 @@ export const StyledForm = styled.form`
         font-weight: bold;
     }
 
-    .Field{
+    .Field {
         align-self: center;
         height: 35px;
         width: 70%;
-        margin-top: 35px;
+        margin-top: 10px;
         border-radius: 5px;
         border: 1px solid #000;
     }
 
 
-
-
-
-
-
-
-
-    @media(max-width: 567px){
+    @media(max-width: 567px) {
         width: 90vw;
 
-        div{
+        div {
             gap: 2px;
         }
 
-        input{
+        input {
             height: 45px;
         }
-
-
     }
-
-
-`
-
+`;

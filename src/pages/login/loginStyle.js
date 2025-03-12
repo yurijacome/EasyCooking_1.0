@@ -9,9 +9,26 @@ export const Container  = styled.div`
 
 
     .CookingImg{
-        width: 45vw;
+        width: 40vw;
         height: 85vh;
-        margin-left: 40px;
+        margin-left: 50px;
+    }
+
+    .login-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 45vw;
+        height: 100vh;
+        background-color:rgb(160, 29, 29);
+    }
+
+    .LoginSpan{
+        color: white;
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
     
 `;

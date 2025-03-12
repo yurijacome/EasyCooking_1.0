@@ -6,11 +6,12 @@ export const StyledForm = styled.form`
 
     display: flex;
     flex-direction: column;
-    margin: 40px 20px 20px 60px;
 
 
     width: 35vw;
-    min-height: 60vh;
+    min-height: 80vh;
+    margin: 20px 20px 20px 0px;
+
     
     border: 1px solid #000;
     background-color:rgb(226, 223, 12);

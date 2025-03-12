@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
     display: flex;
     align-items: center;
     width: 100vw;
-    height: 100px;
+    height: 70px;
     background-color:rgb(79, 102, 148);
 
     .imgLogo {
