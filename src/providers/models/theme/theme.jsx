@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 
-export const GlobalThemeContext = createContext([]);
+export const GlobalThemeContext = createContext(); // Ensure context is created
 
 export function GlobalTheme({ children }) {
   const themeLocal = localStorage.getItem("@Easy:Theme") || "light";
@@ -10,11 +10,15 @@ export function GlobalTheme({ children }) {
   const [themeSwitch, setThemeSwitch] = useState(switchLocal);
   
   useEffect(() => {
-    themeSwitch? setCurrentTheme("dark") : setCurrentTheme("light")
-  }, [themeSwitch])
+    themeSwitch ? setCurrentTheme("dark") : setCurrentTheme("light");
+  }, [themeSwitch]);
   
   function getOpositeTheme() {
     setThemeSwitch(!themeSwitch)
+    localStorage.setItem("@Easy:Switch", !themeSwitch);
+    localStorage.setItem("@Easy:Theme", currentTheme === "light" ? "dark" : "light");
+
+
     localStorage.setItem("@Easy:Switch", !themeSwitch);
     localStorage.setItem("@Easy:Theme", currentTheme === "light" ? "dark" : "light");
   }

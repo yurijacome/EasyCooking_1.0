@@ -20,6 +20,7 @@ export const StyledForm = styled.form`
     align-self: center;
     margin-top: 40px;
     margin-bottom: 20px;
+    color: ${props => props.theme.colorOne};
     }
 
         input{
@@ -52,14 +53,14 @@ export const StyledForm = styled.form`
 
         border-radius: 50px;
         border: none;
-        background-color: #f0f0f0;
-
+       background-color:${props => props.theme.inputColor};
         width: 100%;
         height: 45px;
 
         padding: 6px;
         font-size: 15px;
     }
+
 
         label{
         font-size: 18px;
@@ -70,6 +71,7 @@ export const StyledForm = styled.form`
         align-items: center;
         gap: 0.5rem;
         width: 100%;
+        color: ${props => props.theme.colorOne};
     }
 
 
