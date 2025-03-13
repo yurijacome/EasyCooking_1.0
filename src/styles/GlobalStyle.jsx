@@ -1,47 +1,60 @@
 import { createGlobalStyle } from "styled-components";
 
 const lightTheme = {
-  colorHeader: "#ECECEC",
-  backgroundColorOne: "#ffffff",
-  backgroundColorTwo: "#EA1D2C",
+
+  backgroundColorOne: "rgb(255, 255, 255)",
+  backgroundColorTwo: "rgb(241, 241, 241)",
+
   colorOne: "rgb(0, 0, 0)",
   colorTwo: "rgb(255, 255, 255)",
-  catOne: "#FFEB0A",
-  catTwo: "#ffc60a",
-  catTree: "#f68f11",
-  catFour: "#F64F11",
+
+  pallet1: "rgb(255, 0, 0)", 
+  pallet2: "rgb(255, 61, 0)",
+  pallet3: "rgb(255, 136, 0)",
+  pallet4: "rgb(255, 174, 0)",
+  pallet5: "rgb(233, 198, 1)",
+
+  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.21)",
+  boxShadowHover: "0 8px 12px rgba(0, 0, 0, 0.25)",
+  
+  
   inputColor: "#E2E2E2", 
+  inputColorFilter: "#E2E2E2",
+  
   colorIcon: "#252525",
   rating: "#f68f11",
   title: "#ea1d2cff",
 
 
-  button: {
-      textColor: "#ffffff",
-      backgroundColor: "rgb(255, 0, 0)",
-  },
+
 };
 
-const darkTheme = {
-  colorOne: "#ffffff",
-  colorTwo: "#000000",
-  colorHeader: "#121212",
-  backgroundColorOne: "#252525",
-  backgroundColorTwo: "#5D090E",
-  catOne: "#FFEB0A",
-  catTwo: "#ffc60a",
-  catTree: "#f68f11",
-  catFour: "#F64F11",
-  inputColor:"#333333",
+const darkTheme = {  
+
+  backgroundColorOne: "rgb(20, 20, 20)",
+  backgroundColorTwo: "rgb(39, 39, 39)",
+
+  colorOne: "rgb(255, 255, 255)",
+  colorTwo: "rgb(0, 0, 0)",
+
+  pallet1: "rgb(255, 0, 0)", 
+  pallet2: "rgb(255, 61, 0)",
+  pallet3: "rgb(255, 136, 0)",
+  pallet4: "rgb(255, 174, 0)",
+  pallet5: "rgb(233, 198, 1)",
+
+  boxShadow: "0 4px 6px rgba(255, 255, 255, 0.12)",
+  boxShadowHover: "0 8px 12px rgba(255, 255, 255, 0.14)",
+
+  inputColor:"rgb(48, 48, 48)",
+  inputColorFilter: "rgb(20, 20, 20)",
+
   colorIcon: "#E2E2E2",
   rating: "#ffc60a",
   title: "#cd131fff",
 
   
-  button: {
-    textColor: "rgb(255, 255, 255)",
-    backgroundColor: "rgb(255, 0, 0)",
-  },
+
 };
 
 export const themes = {
@@ -73,6 +86,9 @@ export const GlobalStyle = createGlobalStyle`
   
   button {
     cursor: pointer;
+    font-weight: 600;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
   }
 
   a {

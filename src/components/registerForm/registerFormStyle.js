@@ -42,7 +42,7 @@ export const StyledForm = styled.form`
     }
 
     button{ 
-        width: 40%;
+        width: 25%;
         margin-top: 50px;
         height: 45px;
         border-radius: 50px;
@@ -51,6 +51,15 @@ export const StyledForm = styled.form`
         color: white;
         font-size: 15px;
         font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        box-shadow: ${(props) => props.theme.boxShadow};
+    }    
+
+    button:hover{  
+        background-color: ${props => props.theme.pallet2};
+        box-shadow: ${(props) => props.theme.boxShadowHover};
+        transform: translateY(-6px);
+
     }
 
     .Field{
