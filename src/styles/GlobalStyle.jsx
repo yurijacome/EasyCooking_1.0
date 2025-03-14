@@ -16,12 +16,13 @@ const lightTheme = {
 
   boxShadow: "0 4px 6px rgba(0, 0, 0, 0.21)",
   boxShadowHover: "0 8px 12px rgba(0, 0, 0, 0.25)",
+  boxShadowHard: " 2px 8px 12px rgba(0, 0, 0, 0.4)",
   
   
   inputColor: "#E2E2E2", 
   inputColorFilter: "#E2E2E2",
   
-  colorIcon: "#252525",
+  colorIcon: "rgb(255, 255, 255)",
   rating: "#f68f11",
   title: "#ea1d2cff",
 
@@ -45,11 +46,13 @@ const darkTheme = {
 
   boxShadow: "0 4px 6px rgba(255, 255, 255, 0.12)",
   boxShadowHover: "0 8px 12px rgba(255, 255, 255, 0.14)",
+  boxShadowHard: " 2px 8px 12px rgba(255, 255, 255, 0.23)",
+
 
   inputColor:"rgb(48, 48, 48)",
   inputColorFilter: "rgb(20, 20, 20)",
 
-  colorIcon: "#E2E2E2",
+  colorIcon: "rgb(255, 255, 255)",
   rating: "#ffc60a",
   title: "#cd131fff",
 

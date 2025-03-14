@@ -2,7 +2,9 @@ import React from 'react';
 
 import { Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+
 import { StyledForm } from './registerFormStyle';
+import { GiKnifeFork } from 'react-icons/gi';
 
 const validationSchema = Yup.object().shape({
 
@@ -39,19 +41,19 @@ const RegisterForm = () => {
                 <StyledForm>
                     <h1>Registrar</h1>
 
-                    <label>Email </label>
+                    <label> <GiKnifeFork/> Email </label>
                     <Field className="Field" name="email" placeholder="Email" />
                     <ErrorMessage name="email" component="span" />
 
-                    <label>Nome </label>
+                    <label> <GiKnifeFork/> Nome </label>
                     <Field className="Field" name="username" placeholder="Nome" />
                     <ErrorMessage name="username" component="span" />
 
-                    <label>Senha </label>
+                    <label> <GiKnifeFork/> Senha </label>
                     <Field className="Field" name="password" type="password" placeholder="Senha" />
                     <ErrorMessage name="password" component="span" />
 
-                    <label>Confirmar senha </label>
+                    <label> <GiKnifeFork/> Confirmar senha </label>
                     <Field className="Field" name="confirmPassword" type="password" placeholder="Confirm Password" />
                     <ErrorMessage name="confirmPassword" component="span" />
 

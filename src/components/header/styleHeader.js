@@ -17,18 +17,6 @@ export const HeaderContainer = styled.header`
         cursor: pointer;
     }
 
-        button {
-            border: none;
-            height: 35px;
-            width: 100px;
-            border-radius: 35px;
-            margin-left: -15vh;
-            cursor: pointer;
-            font-size: 16px;
-            
-
-
-        }
 
 
 
