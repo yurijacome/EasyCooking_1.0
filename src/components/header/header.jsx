@@ -4,7 +4,7 @@ import { GlobalThemeContext } from '../../providers/models/theme/theme.jsx'; // 
 import { useHistory } from 'react-router-dom';
 
 import { HeaderContainer } from "./styleHeader";
-import { UserArea } from '../userButton/userButton.jsx';
+import { UserButton } from '../userButton/userButton.jsx';
 
 import LogoBlack from '../../assets/logoBlack.svg';
 import LogoWhite from '../../assets/logoWhite.svg'; // Import LogoWhite for dark theme
@@ -27,7 +27,7 @@ const Header = () => {
       <img className="imgLogo" 
       src={currentTheme === 'light' ? LogoBlack : LogoWhite} alt="Logo" 
       onClick={handleHome} />
-      <UserArea/>
+      <UserButton/>
     </HeaderContainer>
 
   );

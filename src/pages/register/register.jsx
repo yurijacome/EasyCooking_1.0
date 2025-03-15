@@ -3,14 +3,14 @@ import { GlobalThemeContext } from '../../providers/models/theme/theme.jsx'; // 
 import { Container } from "./registerStyle.jsx";
 
 import RegisterForm from '../../components/registerForm/registerForm.jsx';
-import StyledButton from '../../components/StyledButton'; // Import the StyledButton component
+import { ThemeButton } from '../../components/themeButton/themeButton.jsx';
 
 import LogoBlack from '../../assets/logoBlack.svg';
 import LogoWhite from '../../assets/logoWhite.svg'; // Import LogoWhite for dark theme
 
 
 const Register = () => {
-  const { currentTheme, getOpositeTheme } = useContext(GlobalThemeContext); // Use context to get theme switch function
+  const { currentTheme } = useContext(GlobalThemeContext); // Use context to get theme switch function
 
 
 
@@ -18,9 +18,9 @@ const Register = () => {
 
     <div className="register-page">
 
-
+      <ThemeButton/>
       <Container>
-      <StyledButton onClick={getOpositeTheme}>TEMA</StyledButton>
+      
         <div className="register-container">
           <img className="Logo" src={currentTheme === 'light' ? LogoBlack : LogoWhite} alt="Logo" />
             <h1>Facilitando sua vida no dia a dia. Guiando sua <span>cozinha </span> 

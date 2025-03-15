@@ -2,11 +2,11 @@ import React from "react";
 import { useHistory } from 'react-router-dom';
 import { useState } from "react"; // Import useContext for theme management
 
-import { UserButton } from "./userButtonStyle";
+import { UserButtonStyled } from "./userButtonStyle";
 import { UserContainer } from "./userButtonStyle";
 import { GiCook } from "react-icons/gi";
 
-export const UserArea = () => {
+export const UserButton = () => {
     const [open, setOpen] = useState(false);
     const history = useHistory();
 
@@ -20,9 +20,9 @@ export const UserArea = () => {
 
     return (
     <>
-        <UserButton onClick={() => setOpen(!open)}>
+        <UserButtonStyled onClick={() => setOpen(!open)}>
             <GiCook className="userIcon" />
-        </UserButton>
+        </UserButtonStyled>
 
         {open && ( 
             <UserContainer>

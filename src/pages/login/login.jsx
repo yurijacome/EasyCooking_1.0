@@ -1,25 +1,23 @@
 import { useContext } from "react"; // Import useContext for theme management
-import { GlobalThemeContext } from '../../providers/models/theme/theme.jsx'; // Import the context
+import { GlobalThemeContext } from '../../providers/models/theme/theme.jsx'; 
 import { Container } from "./loginStyle.jsx";
 
 import LoginForm from '../../components/loginForm/loginForm.jsx';
-import StyledButton from '../../components/StyledButton'; // Import the StyledButton component
+import { ThemeButton } from '../../components/themeButton/themeButton.jsx';
 
 import LogoBlack from '../../assets/logoBlack.svg';
-import LogoWhite from '../../assets/logoWhite.svg'; // Import LogoWhite for dark theme
+import LogoWhite from '../../assets/logoWhite.svg'; 
 import CookingPhoto from '../../assets/LoginMainPhoto.png';
 
 const Login = () => {
-  const { currentTheme, getOpositeTheme } = useContext(GlobalThemeContext); // Use context to get theme switch function
+  const { currentTheme } = useContext(GlobalThemeContext); 
 
   return (
     <div className="login-page">
-      {/* <Header  /> */}
+      <ThemeButton/>
       <Container>
-      <StyledButton onClick={getOpositeTheme}>TEMA</StyledButton>
-
         <div className="login-container">
-          <img className="Logo" src={currentTheme === 'light' ? LogoBlack : LogoWhite} alt="Logo" /> {/* Change logo based on theme */}
+          <img className="Logo" src={currentTheme === 'light' ? LogoBlack : LogoWhite} alt="Logo" />
 
           <LoginForm />
           <span className="LoginSpan">Não tem uma conta? <a href="/register">Cadastre-se</a> ou <a href="/"> entre como convidado</a></span>

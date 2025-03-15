@@ -1,15 +1,13 @@
 import styled from "styled-components";
 
-export const UserButton = styled.button`
+export const UserButtonStyled = styled.button`
 
     border: none;
     height: 50px;
     width: 50px;
     border-radius: 100px;
-    margin-left: -5vh;
     cursor: pointer;
-    font-size: 16px;
-
+    margin-left: 30px;
     transition: all 0.3s ease-in-out;
     box-shadow: ${(props) => props.theme.boxShadow};
 
@@ -23,12 +21,6 @@ export const UserButton = styled.button`
     height: 60%;
     color:${(props) => props.theme.colorIcon};
     }
-            
-        
-
-
-
-
 
 
 `
@@ -39,11 +31,12 @@ export const UserContainer = styled.div`
     flex-direction: column;
     align-items: center;
 
-    width: 146px;
+    width: 200px;
     min-height:180px;
 
-    right:19vh;
-    top: 75px;
+    right:0;
+    top: 90px;
+    margin-right: 40px;
 
     
     border:none;

@@ -1,28 +1,42 @@
-import styled from 'styled-components';
+import { styled } from "@mui/system";
+import Switch from "@mui/material/Switch";
 
-export const StyledThemeButton = styled.button`
+export const SwitchStyled = styled(Switch)`
+position: absolute;
+left: 95.3vw;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+height: 50px;
+width: 75px;
 
-  position: absolute;
-  top: 24px;
-  left: 94vw;
-  padding: 10px 20px;
+.MuiSwitch-root {
+width:50px;
 
-  border: none;
-  border-radius: 45px;
-  
-  font-size: 16px;
+}
 
-  width: 50px;
-  height: 50px;
+.MuiSwitch-thumb {
+width: 17px;
+height: 17px;
 
-  .FireIcon{
-  width: 200px;
-  height: 200px;
-  }
+margin-top:7px;
+margin-left: 8px;
+color: red; 
+
+}
+
+.MuiSwitch-track {
+width: 45px;
+
+background-color: black; 
+opacity: 0.8;
+border-radius: 20px;
+
+}
+
+.Mui-checked {
+& + .MuiSwitch-track {
+background-color: white; 
+opacity: 1;
+}
+
 
 `;
-
